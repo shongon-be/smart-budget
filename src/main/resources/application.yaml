@@ -6,3 +6,10 @@ spring:
     mongodb:
       database: ${env.MONGO_DATABASE}
       uri: mongodb+srv://${env.MONGO_USER}:${env.MONGO_PASSWORD}@${env.MONGO_CLUSTER}
+  security:
+    oauth2:
+      client:
+        registration:
+          google:
+            clientId: ${env.GOOGLE_CLIENT_ID}
+            clientSecret: ${env.GOOGLE_CLIENT_SECRET}
